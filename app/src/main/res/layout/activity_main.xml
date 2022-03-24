@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainRel"
+    android:scaleType="fitXY"
+    android:background="@drawable/backgroundimg">
+    <TextView
+        android:id="@+id/userText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textUser"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/userEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/userText"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editUser"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        />
+
+    <TextView
+        android:id="@+id/passText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textPass"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/userText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/passEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/userText"
+        android:layout_below="@id/userText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPass"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/userText"
+        android:layout_below="@id/userText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/buttonConfirm"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"
+        />
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/buttonConfirm"
+        android:layout_below="@id/userText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonCancel"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"
+        />
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/buttonCancel"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonRegister"
+        android:background="@color/gray"
+        />
+    <Button
+        android:id="@+id/buttonForgotPass"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonForgotPass"
+        android:background="@color/gray"
+        />
+    <Button
+        android:id="@+id/restLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_alignTop="@id/buttonForgotPass"
+        android:layout_toRightOf="@id/buttonForgotPass"
+        android:layout_marginLeft="20dp"
+        android:text="@string/restLogin"
+        android:background="@color/gray"
+        />
+</RelativeLayout>
+</ScrollView>

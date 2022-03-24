@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">University Food System</string>
+    <string name="buttonConfirm">Confirm</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonRegister">New User?</string>
+    <string name="editUser">Enter Username</string>
+    <string name="editPass">Enter Password</string>
+    <string name="textUser">Username: </string>
+    <string name="textPass">Password: </string>
+    <string name="textName">Last Name: </string>
+    <string name="editName">Enter Name</string>
+    <string name="fNameText">First Name: </string>
+    <string name="textEmail">Email Address: </string>
+    <string name="editEmail">address@carrier.com</string>
+    <string name="textPhone">Phone Number: </string>
+    <string name="editPhone">XXX-XXX-XXXX</string>
+    <string name="textID">UTA ID: </string>
+    <string name="editID">100XXXXXXX</string>
+    <string name="dummyText">This is a dummy restaurant page</string>
+    <string name="answerEntered">100XXXXXXX</string>
+    <string name="confirmEmailText">100XXXXXXX</string>
+    <string name="confirmEmailEntered">address@carrier.com</string>
+    <string name="textStreetAddress">Address: </string>
+    <string name="editstreetAddress">123 Example Drive Apartment 456</string>
+    <string name="cityAddress">City: </string>
+    <string name="editCity">Arlington</string>
+    <string name="textZip">Zip Code: </string>
+    <string name="editZip">XXXXX</string>
+    <string name="infoString1">Enter the answer to your security question to complete reset</string>
+    <string name="infoString2">Enter the email address registered to your account</string>
+    <string name="spinnerText">Choose Security Question: </string>
+    <string name="answerText">Answer: </string>
+    <string name="answerEdit">Type answer here</string>
+    <string name="buttonForgotPass">Forgot Password?</string>
+    <string name="restLogin">Restaurant? Log in here</string>
+    <string name="tempText">You should review stuff</string>
+    <string name="discountEdit">Enter Discount Amount</string>
+    <string name="costInit">Cost to Rent Ad: $28</string>
+    <string name="buttonAdConfirm">Post Ad</string>
+    <string name="restReviews">Reviews</string>
+    <string name="modifyMenu">View/Modify Menu</string>
+    <string name="rentAd">Rent Ad Space</string>
+    <string name="viewPending">View Pending Orders</string>
+    <string name="noItemsSelected">No Items Selected</string>
+    <string name="textRestName">Restaurant Name</string>
+    <string name="editRestName">Restaurant Name</string>
+    <string name="location">Enter Building</string>
+    <string name="locationEntered">Enter Building</string>
+    <string name="textPrice">Enter Price Category</string>
+    <string name="editPrice">1–4</string>
+    <string name="confirmEmail">Confirm Email</string>
+    <string name="spinnerOpenText">Select Opening Time: </string>
+    <string name="spinnerCloseText">Select Closing Time: </string>
+    <string name="swipes">Use Meal Swipe</string>
+    <string name="dollars">Use Dining Dollars</string>
+    <string name="submit">Submit</string>
+    <string name="creditNum">XXXXXXXXXXXXXXXX</string>
+    <string name="creditNumEnter">Credit Number: </string>
+    <string name="pinEnter">Pin: </string>
+    <string name="pin">XXX</string>
+    <string name="expDateEnter">Exp Date:</string>
+    <string name="expDate">MM/YYYY</string>
+    <string name="link">Delivery</string>
+    <string name="chitchat">Back to our regularly scheduled delivery...</string>
+    <string-array name="securityQuestions">
+        <item>What was your favorite food as a child?</item>
+        <item>What is your mother\'s maiden name?</item>
+        <item>What was the make of your first car?</item>
+        <item>In what city were you born?</item>
+        <item>What high school did you attend?</item>
+    </string-array>
+    <string-array name="buildings">
+        <item>University Center</item>
+        <item>Central Library</item>
+        <item>Maverick Activity Center</item>
+    </string-array>
+    <string-array name="restaurantTimes">
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+    <string-array name="adTypes">
+        <item>Banner Ad</item>
+        <item>Search Result</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noOrdersFound">No Orders</string>
+    <string name="cartHeader">My Cart</string>
+    <string name="cartPrice">$0.00</string>
+    <string name="cartItemTotal">Item Total:</string>
+    <string name="cartDeliveryFee">Delivery Fee:</string>
+    <string name="cartTaxHeader">Tax:</string>
+    <string name="cartTotalHeader">Total:</string>
+    <string name="cartCheckoutButton">Checkout</string>
+    <string name="cartEmpty">Your cart is empty</string>
+    <string name="cartItemDollarSign">$</string>
+    <string name="cartItemDescription">No item description</string>
+    <string name="cartMenuItem">Menu Item Name</string>
+    <string name="foodDefaultImage">Default Food Image</string>
+    <string name="cartItemCount">1</string>
+    <string name="minusButtonImage">Decrease quantity of item</string>
+    <string name="plusButtonImage">Increase quantity of item</string>
+    <string name="orderSummaryHeader">Order Summary</string>
+    <string name="orderCancelButton">Cancel Order</string>
+    <string name="orderPaymentButton">Payment</string>
+    <string name="summaryOrderNum">Order #:</string>
+    <string name="summaryOrderNumText">0000</string>
+    <string name="summaryCustomerName">Customer Name:</string>
+    <string name="summaryFirstName">FirstName</string>
+    <string name="summaryLastName">LastName</string>
+    <string name="summaryEmail">E-mail:</string>
+    <string name="summaryEmailText">E-mail Address</string>
+    <string name="summaryRestaurant">Restaurant:</string>
+    <string name="summaryRestName">Restaurant</string>
+    <string name="summaryYourItems">Your Items:</string>
+    <string name="summaryOrderTotal">Order Total:</string>
+    <string name="summaryOrderTotalText">$0.00</string>
+    <string name="zeroMoneyText">0.00</string>
+</resources>

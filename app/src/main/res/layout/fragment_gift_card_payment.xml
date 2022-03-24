@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Credit Number:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        />
+    <EditText
+        android:id="@+id/editID4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:hint="Credit Number"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:inputType = "number"
+        />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter PIN:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        />
+    <EditText
+        android:id="@+id/editID5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/editID4"
+        android:layout_marginTop="20dp"
+        android:hint="Enter PIN"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:inputType = "number"
+        />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editID5"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:text="Cancel"
+        />
+    <Button
+        android:id="@+id/buttonS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editID5"
+        android:layout_toRightOf="@id/buttonCancel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Submit"
+        />
+</RelativeLayout>

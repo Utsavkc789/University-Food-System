@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/UTA_orange"
+    tools:context=".RestaurantHomescreen">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/modifyMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/dark_gray"
+        android:textColor="@color/white"
+        android:text="@string/modifyMenu" />
+    <Button
+        android:id="@+id/rentAd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="310dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/UTA_blue"
+        android:textColor="@color/white"
+        android:text="@string/rentAd"
+        />
+    <Button
+        android:id="@+id/R_LOGOUT_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_gray"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="360dp"
+        android:textColor="@color/white"
+        android:text="LOG OUT" />
+
+</RelativeLayout>

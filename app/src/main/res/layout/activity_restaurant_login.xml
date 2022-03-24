@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg2"
+    android:fitsSystemWindows="true"
+    android:scaleType="fitXY">
+    <TextView
+        android:id="@+id/restText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textUser"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/restEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/restText"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editUser"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        />
+
+    <TextView
+        android:id="@+id/passRestText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textPass"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/restText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/passRestEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/restText"
+        android:layout_below="@id/restText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPass"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/buttonConf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/restText"
+        android:layout_below="@id/restText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/buttonConfirm"
+        />
+    <Button
+        android:id="@+id/buttonCanc"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@id/buttonConf"
+        android:layout_below="@id/restText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonCancel"
+        />
+    <Button
+        android:id="@+id/buttonReg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/buttonCanc"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonRegister"
+        />
+    <Button
+        android:id="@+id/buttonForgotPassRest"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/buttonReg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/buttonForgotPass"
+        />
+</RelativeLayout>
+</ScrollView>

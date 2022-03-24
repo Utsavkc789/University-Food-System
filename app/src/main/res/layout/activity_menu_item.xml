@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuItem">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="33dp"
+        android:contentDescription="generic food item"
+        android:src="@drawable/generic_fooditem" />
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:text="MENU ITEM NAME"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="190dp"
+        android:text="MENU ITEM DESCRIPTION"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/promoDescription"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="265dp"
+        android:text="PROMO DESCRIPTION"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="MENU ITEM PRICE"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/back_to_menu_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="430dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Back to Menu" />
+
+    <Button
+        android:id="@+id/confirm_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="431dp"
+        android:text="Confirm" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkboxes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="320dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_opt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Add to Order" />
+
+        <CheckBox
+            android:id="@+id/checkbox_opt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Add to Favorites List" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuSelection">
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/breakfastButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="135dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Breakfast" />
+
+    <Button
+        android:id="@+id/lunchButton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="135dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Lunch" />
+
+    <Button
+        android:id="@+id/dinnerButton"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="134dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Dinner" />
+
+    <Button
+        android:id="@+id/show_all_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="135dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Show all" />
+
+    <Button
+        android:id="@+id/promo_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="80dp"
+        android:text="Promo" />
+
+    <Button
+        android:id="@+id/MS_BTS_Button"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Back" />
+
+    <ListView
+        android:id="@+id/menu_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="2dp"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <TextView
+        android:id="@+id/restaurantname_textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
+        android:text="[RESTAURANT NAME HERE]"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resto_loc_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="60dp"
+        android:text="[RESTAURANT LOCATION HERE]" />
+
+    <TextView
+        android:id="@+id/open_close_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="95dp"
+        android:text="[RESTAURANT TIMES HERE]" />
+
+</RelativeLayout>

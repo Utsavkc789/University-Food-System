@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO:Add radio buttons, add order summary-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:id="@+id/deliveryInfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/deliveryInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@id/deliveryInfo4"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/deliveryInfo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_below="@id/deliveryInfo3"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/spinnerPickupText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Choose Pickup Location"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/deliveryInfo5"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:id="@+id/spinnerPickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinnerPickupText"
+        />
+    <TextView
+        android:id="@+id/pickupView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/spinnerPickup"
+        android:text="Delivery Time Estimate"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/pickupView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/pickupView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/pickupSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickupView2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"
+        />
+</RelativeLayout>

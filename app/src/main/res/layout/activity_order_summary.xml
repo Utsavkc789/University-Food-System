@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderSummary">
+
+    <TextView
+        android:id="@+id/orderSummaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/orderSummaryHeader"
+        android:textColor="@color/UTA_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderSummaryText">
+
+        <TextView
+            android:id="@+id/summaryOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/summaryOrderNum"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/summaryOrderNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/summaryOrderNumText"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryOrderNumber"
+            app:layout_constraintStart_toEndOf="@+id/summaryOrderNumber"
+            app:layout_constraintTop_toTopOf="@+id/summaryOrderNumber" />
+
+        <TextView
+            android:id="@+id/summaryCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/summaryCustomerName"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/summaryOrderNumber"
+            app:layout_constraintTop_toBottomOf="@+id/summaryOrderNumber" />
+
+        <TextView
+            android:id="@+id/summaryFirstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/summaryFirstName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryCustomerName"
+            app:layout_constraintStart_toEndOf="@+id/summaryCustomerName"
+            app:layout_constraintTop_toTopOf="@+id/summaryCustomerName" />
+
+        <TextView
+            android:id="@+id/summaryLastNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/summaryLastName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryFirstNameText"
+            app:layout_constraintStart_toEndOf="@+id/summaryFirstNameText"
+            app:layout_constraintTop_toTopOf="@+id/summaryFirstNameText" />
+
+        <TextView
+            android:id="@+id/summaryEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/summaryEmail"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/summaryCustomerName"
+            app:layout_constraintTop_toBottomOf="@+id/summaryCustomerName" />
+
+        <TextView
+            android:id="@+id/summaryEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/summaryEmailText"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryEmail"
+            app:layout_constraintStart_toEndOf="@+id/summaryEmail"
+            app:layout_constraintTop_toTopOf="@+id/summaryEmail" />
+
+        <TextView
+            android:id="@+id/summaryRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/summaryRestaurant"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/summaryEmail"
+            app:layout_constraintTop_toBottomOf="@+id/summaryEmail" />
+
+        <TextView
+            android:id="@+id/summaryRestNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/summaryRestName"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryRestaurant"
+            app:layout_constraintStart_toEndOf="@+id/summaryRestaurant"
+            app:layout_constraintTop_toTopOf="@+id/summaryRestaurant" />
+
+        <TextView
+            android:id="@+id/summaryYourItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/summaryYourItems"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/summaryRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/summaryRestaurant" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/summaryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/summaryYourItems"
+            app:layout_constraintTop_toBottomOf="@+id/summaryYourItems">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/summaryOrderTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/summaryOrderTotal"
+            android:textColor="@color/UTA_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/summaryYourItems"
+            app:layout_constraintTop_toBottomOf="@+id/summaryRecyclerView" />
+
+        <TextView
+            android:id="@+id/summaryDollarSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/cartItemDollarSign"
+            android:textSize="20sp"
+            android:textColor="@color/UTA_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryOrderTotalNum"
+            app:layout_constraintEnd_toStartOf="@+id/summaryOrderTotalNum"
+            app:layout_constraintTop_toTopOf="@+id/summaryOrderTotalNum" />
+
+        <TextView
+            android:id="@+id/summaryOrderTotalNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="@string/zeroMoneyText"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/summaryOrderTotal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/summaryOrderTotal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/cancelOrderButton"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="@string/orderCancelButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/paymentButton"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="@string/orderPaymentButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

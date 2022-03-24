@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/backgroundimg2"
+    android:scaleType="fitXY">
+    <TextView
+        android:id="@+id/lNameText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"/>
+
+    <EditText
+        android:id="@+id/lNameEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_alignBottom="@id/lNameText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editName"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/fNameText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/fNameText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/lNameText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/fNameEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/lNameText"
+        android:layout_alignBottom="@id/fNameText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editName"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textEmail"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/fNameText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/emailEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/fNameText"
+        android:layout_alignBottom="@id/emailText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editEmail"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textPhone"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/emailText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/phoneEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/emailEntered"
+        android:layout_alignBottom="@id/phoneText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPhone"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/idText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textID"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/phoneText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/idEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/phoneText"
+        android:layout_alignBottom="@id/idText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editID"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/passText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textPass"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/idText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/passEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/idText"
+        android:layout_alignBottom="@id/passText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPass"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:inputType="textPassword"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/streetAddressText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textStreetAddress"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/passText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/streetAddressEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/passText"
+        android:layout_alignBottom="@id/streetAddressText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editstreetAddress"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/cityAddress"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/streetAddressText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/cityEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/streetAddressText"
+        android:layout_alignBottom="@id/cityText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editCity"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/zipText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textZip"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/cityText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/zipEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/cityText"
+        android:layout_alignBottom="@id/zipText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editZip"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:id="@+id/registerConfirm"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/answerText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@id/registerCancel"
+        android:text="@string/buttonConfirm"
+        android:background="@color/UTA_orange"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/registerCancel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/answerText"
+        android:layout_alignTop="@id/registerConfirm"
+        android:layout_marginLeft="50dp"
+        android:text="@string/buttonCancel"
+        android:background="@color/UTA_orange"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/spinnerText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/spinnerText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/zipText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/spinnerText"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/answerText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/spinnerEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/phoneText"
+        android:layout_below="@id/spinner"
+        android:layout_alignBottom="@id/answerText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/answerEdit"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
+</ScrollView>

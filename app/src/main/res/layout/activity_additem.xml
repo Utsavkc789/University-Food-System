@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/UTA_orange"
+    tools:context=".AddItem">
+
+    <TextView
+        android:id="@+id/additemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ADD ITEM"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemcategory_TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:text="CATEGORY"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemname_TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="215dp"
+        android:gravity="center"
+        android:text="ITEM NAME*"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemprice_TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="265dp"
+        android:gravity="center"
+        android:text="ITEM PRICE*"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/itemdescription_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="315dp"
+        android:gravity="center"
+        android:text="Describe the Menu Item"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <LinearLayout
+        android:id="@+id/promocheckboxes"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="140dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_ispromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Promotional or Seasonal Item" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/item_name_EditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="195dp"
+        android:hint="Menu item Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/item_price_EditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="250dp"
+        android:hint="Menu Item Price"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/item_description_EditText"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="340dp"
+        android:hint="Short Description"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/confirm_add_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="410dp"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/cancel_add_Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="409dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

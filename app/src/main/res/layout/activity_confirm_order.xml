@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/orderLinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <Button
+        android:id="@+id/submitOrder"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/orderLinLayout"
+        android:text="@string/buttonConfirm"
+        />
+    <Button
+        android:id="@+id/cancelOrder"
+        android:layout_below="@+id/submitOrder"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/buttonCancel"
+        />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "754775638849",
+    "firebase_url": "https://ufs-database-team-7-default-rtdb.firebaseio.com",
+    "project_id": "ufs-database-team-7",
+    "storage_bucket": "ufs-database-team-7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754775638849:android:95c31447308a43ab7bd7c0",
+        "android_client_info": {
+          "package_name": "com.vogella.android.universityfoodsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754775638849-9tk5hqaom2fnnr1fg1piq14ud09tgh1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCipG2ziiGGwshOBZ2B_5u6LwRmfQmQIP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754775638849-9tk5hqaom2fnnr1fg1piq14ud09tgh1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

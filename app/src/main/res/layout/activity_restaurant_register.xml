@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg2"
+    android:fitsSystemWindows="true"
+    android:scaleType="fitXY">
+    <TextView
+        android:id="@+id/restNameText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textRestName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/restNameEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/priceText"
+        android:layout_alignTop="@id/restNameText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editRestName"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/restNameText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/locationEntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/priceText"
+        android:layout_below="@id/restNameText"
+        android:layout_alignTop="@id/locationText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/locationEntered"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/emailRText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textEmail"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/locationText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/emailREntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/priceText"
+        android:layout_below="@id/locationText"
+        android:layout_alignTop="@id/emailRText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editEmail"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/textPrice"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/emailRText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/priceREntered"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/priceText"
+        android:layout_below="@id/emailREntered"
+        android:layout_alignTop="@id/priceText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPrice"
+        android:textSize="20dp"
+        android:singleLine = "true"
+        android:imeOptions = "actionNext"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/passReText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/editPass"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/priceText"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/passREntered1"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_toRightOf="@id/priceText"
+        android:layout_below="@id/priceText"
+        android:layout_alignTop="@id/passReText"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/editPass"
+        android:textSize="20sp"
+        android:singleLine = "true"
+        android:imeOptions = "actionDone"
+        android:inputType="textPassword"
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:id="@+id/regConfirm"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/regCancel"
+        android:layout_below="@id/timeCloseSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/buttonConfirm"
+        android:background="@color/UTA_blue"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/regCancel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/timeCloseSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/buttonCancel"
+        android:background="@color/UTA_blue"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/spinnerTimeOpenText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/spinnerOpenText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/passREntered1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp" />
+    <Spinner
+        android:id="@+id/timeOpenSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@id/spinnerTimeOpenText"
+        android:layout_below="@id/passREntered1"
+        android:layout_alignTop="@id/spinnerTimeOpenText"
+        android:layout_marginLeft="70dp"/>
+    <TextView
+        android:id="@+id/spinnerTimeCloseText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/spinnerCloseText"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/timeOpenSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp" />
+    <Spinner
+        android:id="@+id/timeCloseSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@id/spinnerTimeCloseText"
+        android:layout_below="@id/timeOpenSpinner"
+        android:layout_alignTop="@id/spinnerTimeCloseText"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
+</ScrollView>
